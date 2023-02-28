@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="my-12 text-lg font-medium">
-        <h2>See what other people are saying about our cafe.</h2>
+        <h2 className="flex text-2xl items-center mb-5 underline text-slate-100">See what other people are saying about our cafe.</h2>
         {allPosts.map((post) => (
           <Message key={post.id} {...post}>
             <Link href={{ pathname: `/${post.id}`, query: {...post} }}>
